@@ -1,0 +1,68 @@
+*
+{ /*Сбрасываем стили*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body 
+{
+  font-family: Manrope, sans-serif; /*Шрифт*/
+  width: 100%;
+  min-height: 100vh;
+}
+
+.header-container { /*Контейнер*/
+  padding-top: 7px; /*Отступ сверху*/
+  padding-bottom: 7px; /*Отступ сверху*/
+  display: grid; /*Контейнер - сетка*/
+  grid-template-columns: 45% 55%; /*Две колонки*/
+  grid-template-rows: 50px; /*Одна строка*/
+  justify-items: center; /*Горизонтальное выравнивание*/
+  align-items: center; /*Вертикальное выравнивание*/
+  justify-content: center; 
+  row-gap:  50px;
+  border-bottom: #dbdbdb 2px solid;
+}
+
+.nav ul {
+  list-style: none; /*Убираем стилизацию списка*/
+  display: flex;
+  margin: 0;
+}
+
+.nav ul li {
+  margin-left: 40px;
+}
+
+.nav ul li a {
+  text-decoration: none; /*Убираем стилизацию ссылок*/
+  color: #000000;
+  transition: .3s ease-in-out,color .3s ease-in-out; /*Длительность анимации смены цвета при наведении*/
+}
+
+ul li a:hover /*Ссылка при наведении*/
+{
+  color:rgb(255, 0, 13);
+}
+
+.button /*Кнопка Start*/
+{
+  font-size: 16px;
+  color: #000000;
+  padding: 3px 27px;
+  width: -webkit-fit-content; /*Chrome*/
+  width: -moz-fit-content; /*Mozilla*/
+  width: fit-content;
+  border-radius: 4px; /*Округление border'a*/
+  border: 2px solid #377E72; 
+  -webkit-transition: background .3s ease-in-out,color .3s ease-in-out;
+  -o-transition: background .3s ease-in-out,color .3s ease-in-out;
+  transition: background .3s ease-in-out,color .3s ease-in-out;
+}
+
+ .button:hover  /*При наведении на кнопку - меняем цвет и background color*/
+{
+  background-color: #377E72;
+  color: white;
+}

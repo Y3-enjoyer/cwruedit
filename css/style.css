@@ -1,0 +1,186 @@
+.main-container {
+    display: grid;
+    padding-top: 7px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7px;
+}
+
+.title {
+    align-items: center;
+    justify-items: center;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    font-size: 20px;
+    padding-left: 10rem;
+}
+
+.pcphoto 
+{
+    grid-column: 3 / span 2; /* занимает 2 колонки, начиная с 3 колонки */
+    grid-row: 1 / span 2; /* занимает 2 строки, начиная с 1 строки */
+    justify-self: start;
+}
+
+.title span {
+    font-weight: bold;
+    color: #003071;
+}
+
+.button-mainpg
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 2;
+    justify-self: end;
+    font-size: 24px;
+    color: #000000;
+    padding: 3px 42px;
+    text-decoration: none;
+    width: -webkit-fit-content; /*Chrome*/
+    width: -moz-fit-content; /*Mozilla*/
+    width: fit-content;
+    border-radius: 4px; /*Округление border'a*/
+    border: 2px solid #377E72; 
+    -webkit-transition: background .3s ease-in-out,color .3s ease-in-out;
+    -o-transition: background .3s ease-in-out,color .3s ease-in-out;
+    transition: background .3s ease-in-out,color .3s ease-in-out;
+}
+
+ .button-mainpg:hover  /*При наведении на кнопку - меняем цвет и background color*/
+{
+  background-color: #377E72;
+  color: white;
+}
+
+.zagolovok
+{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 3rem;
+}
+
+
+
+.first-item {
+    display: grid;
+    grid-template-columns: 17.7% 20% 44.6% 17.7%;
+    grid-template-rows: repeat(1, 330px);
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.first-item img {
+    grid-column: 2 / span 1; /* занимает 1 колонки, начиная с 2 колонки */
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+}
+
+.first-item h1 {
+    grid-column: 3 / span 1; /* занимает 1 колонки, начиная с 2 колонки */
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: start;
+    padding-top: 1.5rem;
+}
+
+.first-item p {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: end;
+    font-size: 26px; 
+    color: #000000;
+    text-align: justify;
+}
+
+
+.second-item {
+    display: grid;
+    grid-template-columns: 17.7% 20% 44.6% 17.7%;
+    grid-template-rows: repeat(1, 330px);
+    align-items: center;
+}
+
+.second-item img {
+    grid-column: 2 / span 1; /* занимает 1 колонки, начиная с 2 колонки */
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+}
+
+.second-item h1 {
+    grid-column: 3 / span 1; /* занимает 1 колонки, начиная с 2 колонки */
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: start;
+    padding-top: 1.5rem;
+}
+
+.second-item p {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+    font-size: 26px; 
+    color: #000000;
+    text-align: justify;
+    padding-top: 2.3rem;
+}
+
+
+.third-item {
+    display: grid;
+    grid-template-columns: 17.7% 20% 44.6% 17.7%;
+    grid-template-rows: repeat(1, 330px);
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.third-item img {
+    grid-column: 2 / span 1; /* занимает 1 колонки, начиная с 2 колонки */
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+}
+
+.third-item h1 {
+    grid-column: 3 / span 1; /* занимает 1 колонки, начиная с 2 колонки */
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: start;
+}
+
+.third-item p {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    justify-self: start;
+    align-self: center;
+    font-size: 26px; 
+    color: #000000;
+    text-align: justify;
+    padding-top: 2.3rem;
+}
+
+
+.text-zag
+{
+    font-size: 42px;
+    color:#003071;
+    font-weight: bold;
+}
+
+.text-text
+{
+    font-size: 28px;
+    color:#000000;
+}
+
+.text-text span
+{
+    color:#003071;
+    font-weight: bold;
+}
